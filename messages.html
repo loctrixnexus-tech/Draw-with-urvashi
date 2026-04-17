@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/msg.css">
+</head>
+<body>
+   <h2>📩 All Messages</h2>
+<div id="box"></div>
+
+<script>
+
+// PROTECTION
+if(localStorage.getItem("isAdmin") !== "true"){
+  window.location.href = "login.html";
+}
+
+// FETCH DATA
+let messages = JSON.parse(localStorage.getItem("messages")) || [];
+
+let html = "";
+
+messages.forEach((m,i)=>{
+  html += `
+<div class="message-card">
+  <h3>👤 ${m.name}</h3>
+  <p><span>📞</span> ${m.phone}</p>
+  <p><span>📌</span> ${m.subject}</p>
+  <p>💬 ${m.message}</p>
+  <button onclick="del(${i})">Delete</button>
+</div>
+`;
+});
+
+document.getElementById("box").innerHTML = html;
+
+
+// DELETE
+function del(i){
+  let messages = JSON.parse(localStorage.getItem("messages"));
+  messages.splice(i,1);
+  localStorage.setItem("messages", JSON.stringify(messages));
+  location.reload();
+}
+</script>
+</body>
+</html>

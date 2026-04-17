@@ -1,0 +1,84 @@
+/* PAGE */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #fff0f5, #f8f9ff);
+  padding: 40px;
+}
+
+/* TITLE */
+h2 {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 40px;
+  font-size: 32px;
+}
+
+/* CONTAINER */
+#box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+/* CARD */
+.message-card {
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+/* HOVER EFFECT */
+.message-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* TOP BORDER DESIGN */
+.message-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, #ff6b6b, #ff8fab);
+}
+
+/* NAME */
+.message-card h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+/* TEXT */
+.message-card p {
+  margin: 6px 0;
+  color: #555;
+  font-size: 14px;
+}
+
+/* ICON STYLE */
+.message-card span {
+  margin-right: 6px;
+}
+
+/* DELETE BUTTON */
+.message-card button {
+  margin-top: 12px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(45deg, #ff6b6b, #ff8fab);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* BUTTON HOVER */
+.message-card button:hover {
+  transform: scale(1.05);
+}

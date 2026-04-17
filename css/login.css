@@ -1,0 +1,108 @@
+/* BODY BACKGROUND */
+.login-body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+}
+
+/* ANIMATED BG */
+@keyframes gradientBG {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+/* CENTER CONTAINER */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CARD */
+.login-card {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 40px;
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+  width: 320px;
+  text-align: center;
+  animation: fadeUp 1s ease;
+}
+
+/* TITLE */
+.login-card h2 {
+  margin-bottom: 30px;
+  font-family: 'Playfair Display', serif;
+}
+
+/* INPUT BOX */
+.input-box {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: rgba(255,255,255,0.5);
+}
+
+/* FLOAT LABEL */
+.input-box label {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  color: #555;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+/* ANIMATION */
+.input-box input:focus + label,
+.input-box input:valid + label {
+  top: -8px;
+  left: 10px;
+  font-size: 12px;
+  color: #ff6b6b;
+}
+
+/* BUTTON */
+.login-card button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(45deg, #ff6b6b, #ff8fab);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* BUTTON HOVER */
+.login-card button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(255,107,107,0.5);
+}
+
+/* FADE ANIMATION */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Draw with Urvashi</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="form-popup" id="registerForm">
+
+  <div class="form-box">
+
+    <span class="close-btn" onclick="closeForm()">×</span>
+
+    <h2>🎨 Student Registration</h2>
+
+    <input type="text" id="parentName" placeholder="Parent Name">
+    <input type="text" id="phone" placeholder="Phone Number">
+
+    <input type="text" id="childName" placeholder="Child Name">
+    <input type="text" id="age" placeholder="Child Age">
+
+    <select id="class">
+      <option>Select Class</option>
+      <option>Playgroup</option>
+      <option>Nursery</option>
+      <option>Class 1-3</option>
+      <option>Class 4-7</option>
+    </select>
+
+    <select id="time">
+      <option>Preferred Time</option>
+      <option>Saturday</option>
+      <option>Sunday</option>
+    </select>
+
+    <textarea id="msg" placeholder="Message (optional)"></textarea>
+
+    <button onclick="submitForm()">Register Now 🚀</button>
+
+  </div>
+
+</div>
+
+  <!-- 🔥 GOOGLE FONTS -->
+
+
+  <!-- 🔥 NAVBAR -->
+  <header class="navbar">
+
+    <!-- TOP BAR -->
+    <div class="top-bar">
+      <p>✨ Join Drawing Classes – Limited Seats Available</p>
+    </div>
+
+    <!-- MAIN NAV -->
+    <div class="nav-main">
+
+      <!-- LEFT SEARCH -->
+      <div class="nav-left">
+        <input type="text" placeholder="Search..." />
+      </div>
+
+      <!-- CENTER LOGO -->
+      <div class="nav-logo">
+        Draw with Urvashi
+      </div>
+
+      <!-- RIGHT ICONS -->
+      <div class="nav-icons">
+        <a href="login.html"><span>👤</span></a>
+        <a href="login.html"><span>📩</span></a>
+
+      </div>
+
+    </div>
+
+    <!-- MENU -->
+    <nav class="nav-menu">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="#" class="register-btn" onclick="openForm()">Register</a>
+    </nav>
+
+  </header>
+
+
+  <!-- 🔥 HERO SECTION -->
+  <section class="hero">
+
+    <div class="hero-container">
+
+      <!-- LEFT CONTENT -->
+      <div class="hero-text">
+        <h1>
+          Creative Drawing Classes <br>
+          <span>For Kids at Home</span>
+        </h1>
+
+        <p>
+          Learn Mandala Art, A-Z Drawing & Creative Skills
+          with expert guidance in a fun and engaging way.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#" class="btn primary">Join Now</a>
+          <a href="#" class="btn secondary">View Classes</a>
+        </div>
+
+        <div class="hero-badges">
+          <span>⭐ 3+ Years Experience</span>
+          <span>👩‍🎨 20+ Students</span>
+          <span>💻 Online Classes</span>
+        </div>
+      </div>
+
+      <!-- RIGHT VISUAL -->
+      <div class="hero-visual">
+
+        <div class="art-card"><img src="image/art1.jpg"></div>
+        <div class="art-card"><img src="image/art2.jpg"></div>
+        <div class="art-card"><img src="image/art3.jpg"></div>
+        <div class="art-card"><img src="image/art4.jpg"></div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="kids-about">
+
+    <div class="kids-container">
+
+      <!-- LEFT IMAGE -->
+      <div class="kids-image">
+        <!-- <div class="bg-shape"></div> -->
+        <img src="image/art5.jpg" alt="kids learning">
+      </div>
+
+      <!-- RIGHT CONTENT -->
+      <div class="kids-content">
+
+        <span class="tag">About Classes</span>
+
+        <h2>
+          Safe, Fun & Educational – <br>
+          Just What Your Child Needs
+        </h2>
+
+        <p>
+          Helping kids learn drawing step-by-step in a fun, simple
+          and engaging way from home.
+        </p>
+
+        <div class="features">
+          <div>✔ Easy A-Z Drawing</div>
+          <div>✔ Mandala Art</div>
+          <div>✔ Online Zoom Classes</div>
+          <div>✔ Personal Guidance</div>
+        </div>
+
+        <div class="buttons">
+          <a href="register.html" class="btn primary">Register Now</a>
+          <a href="about.html" class="btn secondary">Learn More</a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+  <!-- 🔥 ART GALLERY GRID -->
+
+
+  <section class="why-section">
+
+    <h2>Why Choose Us</h2>
+    <p class="subtitle">Best learning experience for kids</p>
+
+    <!-- TOP ROW (3 ITEMS) -->
+    <div class="why-row top">
+      <div class="why-box"><span>🎨</span>
+        <p>Experienced Teacher</p>
+      </div>
+      <div class="why-box"><span>🎁</span>
+        <p>Free Demo Class</p>
+      </div>
+      <div class="why-box"><span>💰</span>
+        <p>Affordable Fees</p>
+      </div>
+    </div>
+
+    <!-- BOTTOM ROW (2 ITEMS CENTERED) -->
+    <div class="why-row bottom">
+      <div class="why-box"><span>🏅</span>
+        <p>3+ Years Experience</p>
+      </div>
+      <div class="why-box"><span>💻</span>
+        <p>Online Zoom Classes</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- 🔥 BENEFITS -->
+  <section class="benefits-section">
+
+    <h2>Benefits of Learning Drawing</h2>
+
+    <div class="benefits-container">
+
+      <!-- LEFT SIDE -->
+      <div class="benefits-left">
+        <div class="benefit-card">🎨 Improves Creativity</div>
+        <div class="benefit-card">🧠 Enhances Memory</div>
+        <div class="benefit-card">🧩 Problem Solving Skills</div>
+        <div class="benefit-card">😊 Positive Emotions</div>
+      </div>
+
+      <!-- CENTER IMAGE -->
+      <div class="benefits-image">
+        <img src="image/art6.jpg" alt="kids drawing">
+      </div>
+
+      <!-- RIGHT SIDE -->
+      <div class="benefits-right">
+        <div class="benefit-card">✨ Boosts Confidence</div>
+        <div class="benefit-card">🎯 Better Focus</div>
+        <div class="benefit-card">💡 Creative Thinking</div>
+        <div class="benefit-card">👀 Observation Skills</div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- 🔥 STEPS -->
+  <section class="join-section">
+
+    <h2>How to Join Drawing Classes</h2>
+
+    <div class="join-container">
+
+      <!-- LEFT IMAGE -->
+      <div class="join-image">
+        <img
+          src="https://images.unsplash.com/photo-1615909340810-3ec0e50f9e4d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="join class">
+      </div>
+
+      <!-- RIGHT STEPS -->
+      <div class="join-steps">
+
+        <div class="step-box">
+          <span class="step-number">1</span>
+          <p>Fill Registration Form</p>
+          <div class="step-icon">📝</div>
+        </div>
+
+        <div class="step-box">
+          <span class="step-number">2</span>
+          <p>Your Details Sent via WhatsApp</p>
+          <div class="step-icon">📲</div>
+        </div>
+
+        <div class="step-box">
+          <span class="step-number">3</span>
+          <p>Teacher Contacts You for Payment</p>
+          <div class="step-icon">💬</div>
+        </div>
+
+        <div class="step-box">
+          <span class="step-number">4</span>
+          <p>Join WhatsApp Group</p>
+          <div class="step-icon">👥</div>
+        </div>
+
+        <div class="step-box highlight">
+          <span class="step-number">🎁</span>
+          <p>Attend Free Demo Class</p>
+          <div class="step-icon">🎉</div>
+        </div>
+
+        <div class="step-box">
+          <span class="step-number">5</span>
+          <p>Get Zoom Link & Start Learning</p>
+          <div class="step-icon">🎥</div>
+        </div>
+
+      </div>
+
+  </section>
+
+  <section class="cta-banner">
+    <div class="cta-overlay"></div>
+
+    <div class="cta-content">
+
+      <h2 class="fade-in">🎨 Kids Online Drawing Classes</h2>
+
+      <p class="fade-in delay-1">
+        Learn A-Z Drawing & Mandala Art from Home
+      </p>
+
+      <div class="cta-details fade-in delay-2">
+        <span>👶 Playgroup – Class 7</span>
+        <span>📅 Sat & Sun</span>
+        <span>⏰ 12 PM – 3 PM</span>
+      </div>
+
+      <h3 class="highlight fade-in delay-3">
+        🎁 Free Demo Class Available
+      </h3>
+
+      <button class="cta-btn">Join Now 🚀</button>
+
+    </div>
+  </section>
+
+<section class="gallery">
+  <h2 class="gallery-title">🎨 Student Artwork</h2>
+  <p class="gallery-subtitle">Creativity by our amazing students</p>
+
+  <div class="gallery-grid">
+
+    <div class="gallery-card">
+      <img src="https://images.unsplash.com/photo-1746969750526-485a8adfc287?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+      <div class="overlay">
+        <span>Creative Art</span>
+      </div>
+    </div>
+
+    <div class="gallery-card">
+      <img src="https://images.unsplash.com/photo-1613950190144-4f2a84c75e8c?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+      <div class="overlay">
+        <span>Mandala Design</span>
+      </div>
+    </div>
+
+    <div class="gallery-card">
+      <img src="https://images.unsplash.com/photo-1537440499989-de5f6b6854de?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+      <div class="overlay">
+        <span>Kids Drawing</span>
+      </div>
+    </div>
+
+    <div class="gallery-card">
+      <img src="https://plus.unsplash.com/premium_photo-1681828743440-a99d19844319?q=80&w=1162&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+      <div class="overlay">
+        <span>Color Art</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- 🔥 TESTIMONIAL -->
+  <section class="testimonials">
+    <h2>What Parents Say</h2>
+
+    <div class="testimonial-wrapper">
+
+      <div class="testimonial-track">
+
+        <!-- CARD 1 -->
+        <div class="testimonial-card">
+          <p>
+            "My child improved a lot in creativity. Classes are fun and engaging!"
+          </p>
+          <h4>Mother of Student</h4>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="testimonial-card">
+          <p>
+            "Very patient teaching style. My kid enjoys every class."
+          </p>
+          <h4>Parent Review</h4>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="testimonial-card">
+          <p>
+            "Best online drawing class. Highly recommended!"
+          </p>
+          <h4>Happy Parent</h4>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="testimonial-card">
+          <p>
+            "My child learned mandala art easily. Amazing experience."
+          </p>
+          <h4>Parent Feedback</h4>
+        </div>
+
+        <div class="testimonial-card">
+          <p>
+            "Best online drawing class. Highly recommended!"
+          </p>
+          <h4>Happy Parent</h4>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="testimonial-card">
+          <p>
+            "My child learned mandala art easily. Amazing experience."
+          </p>
+          <h4>Parent Feedback</h4>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- 🔥 FOOTER -->
+   <footer class="footer">
+
+    <div class="footer-container">
+
+      <!-- LEFT -->
+      <div class="footer-about">
+        <h2>Draw with Urvashi</h2>
+        <p>
+          Creative learning platform for kids. Learn A-Z drawing,
+          mandala art & creative skills in a fun and engaging way.
+        </p>
+      </div>
+
+      <!-- SOCIAL -->
+      <div class="footer-social">
+        <h3>Connect</h3>
+        <div class="social-icons">
+          <a href="#">📷</a>
+          <a href="#">📘</a>
+          <a href="#">💬</a>
+          <a href="#">▶</a>
+        </div>
+      </div>
+
+      <!-- LINKS -->
+      <div class="footer-links">
+        <h3>Links</h3>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <!-- CONTACT -->
+      <div class="footer-contact">
+        <h3>Contact</h3>
+        <p>Zoom Classes</p>
+        <p>Sat - Sun | 12 PM - 3 PM</p>
+        <p>📞 +91 9939811805</p>
+      </div>
+
+    </div>
+
+    <p class="footer-bottom">© 2026 Draw with Urvashi</p>
+
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
