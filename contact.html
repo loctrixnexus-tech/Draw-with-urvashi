@@ -100,6 +100,7 @@
 
   <input type="text" id="contactName" placeholder="Your Name">
   <input type="text" id="contactPhone" placeholder="Phone Number">
+
   <input type="text" id="contactSubject" placeholder="Subject">
   <textarea id="contactMessage" placeholder="Your Message"></textarea>
 
@@ -139,9 +140,24 @@
 
     <input type="text" id="demoName" placeholder="Parent Name" required>
     <input type="text" id="demoPhone" placeholder="Phone Number" required>
+   
     <input type="text" id="demoAge" placeholder="Child Age" required>
+ <select id="demoAge" required>
+  <option value="">Select Child Age</option>
 
-    <button onclick="bookDemo()">Book Demo 🎨</button>
+  <option value="2 Years (Playgroup)">2 Years (Playgroup)</option>
+  <option value="3 Years (Playgroup)">3 Years (Playgroup)</option>
+  <option value="4 Years (Nursery)">4 Years (Nursery)</option>
+  <option value="5 Years (Class 1)">5 Years (Class 1)</option>
+  <option value="6 Years (Class 2)">6 Years (Class 2)</option>
+  <option value="7 Years (Class 3)">7 Years (Class 3)</option>
+  <option value="8 Years (Class 4)">8 Years (Class 4)</option>
+  <option value="9 Years (Class 5)">9 Years (Class 5)</option>
+  <option value="10 Years (Class 6)">10 Years (Class 6)</option>
+  <option value="11 Years (Class 7)">11 Years (Class 7)</option>
+</select>
+
+<button type="button" onclick="bookDemo()">Book Demo 🎨</button>
 
   </div>
 

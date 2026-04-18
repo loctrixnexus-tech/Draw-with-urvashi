@@ -324,3 +324,30 @@ body::after {
     width:100%;
   }
 }
+
+
+
+select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+body::before,
+body::after {
+  pointer-events: none;
+}
+
+.demo-box::before{
+  z-index: 0;
+}
+
+.demo-box input,
+.demo-box select,
+.demo-box button,
+.demo-box h2{
+  position: relative;
+  z-index: 2;
+}

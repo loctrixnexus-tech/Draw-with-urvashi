@@ -1,6 +1,3 @@
-
-
-// PHONE VALIDATION FUNCTION
 function isValidPhone(phone){
   return /^[0-9]{10}$/.test(phone);
 }
@@ -26,12 +23,19 @@ function sendMessage(){
     return;
   }
 
-  let data = { name, phone, subject, message };
-
   let messages = JSON.parse(localStorage.getItem("messages")) || [];
-  messages.push(data);
 
-  localStorage.setItem("messages", JSON.stringify(messages));
+// 🔴 CHECK DUPLICATE PHONE
+let exists = messages.some(item => item.phone === phone);
+
+if(exists){
+  alert("This phone number already submitted ❌");
+  return;
+}
+
+messages.push(data);
+
+localStorage.setItem("messages", JSON.stringify(messages));
 
   alert("Message Saved Successfully ✅");
 
@@ -66,8 +70,11 @@ function bookDemo(){
 📞 Phone: ${phone}%0A
 👶 Child Age: ${age}`;
 
+
+
+
   let url = `https://wa.me/919939811805?text=${text}`;
 
   window.open(url, "_blank");
-}
+}   
 
